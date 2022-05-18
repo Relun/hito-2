@@ -10,7 +10,7 @@ require 'faker'
 
 #items = ["Lentes", "Macetero", "Mochila", "Banano", "Ladrillo"]
 
-10.times do |i|
+40.times do |i|
     Product.create(
         title: Faker::Commerce.product_name,
         description: Faker::Marketing.buzzwords,

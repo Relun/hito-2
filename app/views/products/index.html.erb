@@ -12,3 +12,10 @@
 </div>
 
 <%= link_to "New product", new_product_path %>
+<br></br>
+<div>
+  <div>
+    <%= link_to_prev_page @products, 'Página Anterior' %>
+    <%= link_to_next_page @products, 'Siguiente página' %>
+  </div>
+</div>
