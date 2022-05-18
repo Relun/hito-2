@@ -16,6 +16,7 @@ require 'faker'
         description: Faker::Marketing.buzzwords,
         price: Faker::Commerce.price,
         category: Faker::Commerce.material,
-        image_url: Faker::Avatar.image(size: "50x50")
+        image_url: Faker::Avatar.image
+        #image_url: Faker::Avatar.image(size: "50x50")
     )
 end
