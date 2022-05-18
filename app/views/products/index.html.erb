@@ -1,5 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
+<%= search_form_for @q do |f| %>
+    <%= f.label :category_cont %>
+    <%= f.search_field :category_cont %>
+<% end %>
+
+
 <h1>Products</h1>
 
 <div id="products">
