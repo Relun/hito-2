@@ -1,4 +1,9 @@
 <div id="<%= dom_id product %>">
+
+  <div>
+    <%= image_tag(product.image_url) %>
+  </div>
+  
   <p>
     <strong>Title:</strong>
     <%= product.title %>
@@ -18,15 +23,5 @@
     <strong>Category:</strong>
     <%= product.category %>
   </p>
-
-  <p>
-    <strong>Image url:</strong>
-    <%= product.image_url %>
-  </p>
-
-  <div>
-    <%= image_tag(product.image_url) %>
-  </div>
-
 
 </div>
