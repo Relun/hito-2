@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+require 'faker'
+
+#items = ["Lentes", "Macetero", "Mochila", "Banano", "Ladrillo"]
+
+10.times do |i|
+    Product.create(
+        title: Faker::Commerce.product_name,
+        description: Faker::Marketing.buzzwords,
+        price: Faker::Commerce.price,
+        category: Faker::Commerce.material,
+        image_url: Faker::Avatar.image(size: "50x50")
+    )
+end
