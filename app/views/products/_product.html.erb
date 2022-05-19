@@ -1,27 +1,16 @@
 <div id="<%= dom_id product %>">
 
-  <div>
-    <%= image_tag(product.image_url) %>
+  <div class="row">
+    <div class="col-6">
+      <div class="card" style="width: 18rem;">
+        <%= image_tag(product.image_url) %>
+        <div class="card-body">
+          <p class="card-title"><strong>Product:</strong> <%= product.title %></p>
+          <p class="card-text"><strong>Description:</strong> <%= product.description %></p>
+          <p class="card-text"><strong>Price:</strong> <%= product.price %></p>
+          <p class="card-text"><strong>Category:</strong> <%= product.category %></p>
+      </div>
+    </div>
   </div>
-  
-  <p>
-    <strong>Title:</strong>
-    <%= product.title %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= product.description %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
-    <%= product.price %>
-  </p>
-
-  <p>
-    <strong>Category:</strong>
-    <%= product.category %>
-  </p>
 
 </div>

@@ -32,6 +32,7 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 
 #kaminari-paginación
 gem 'kaminari'
+gem 'bootstrap4-kaminari-views'
 
 #ransack-filtrar
 gem 'ransack'
