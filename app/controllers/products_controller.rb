@@ -6,6 +6,11 @@ class ProductsController < ApplicationController
     @q = Product.ransack(params[:q])
     @products = @q.result(distinct: true).page(params[:page]).per(20)
     #@products = Product.page(params[:page]).per(20)
+
+    #respond_to do |format|
+      #format.html
+      #format.json { render json: @products }
+    #end
   end
 
   # GET /products/1 or /products/1.json
@@ -57,6 +62,11 @@ class ProductsController < ApplicationController
       format.html { redirect_to products_url, notice: "Product was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  def api_product
+    @products = Product.all
+    render json: @products
   end
 
   private
