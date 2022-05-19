@@ -64,11 +64,6 @@ class ProductsController < ApplicationController
     end
   end
 
-  def api_product
-    @products = Product.all
-    render json: @products
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product

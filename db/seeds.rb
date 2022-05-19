@@ -8,9 +8,7 @@
 
 require 'faker'
 
-#items = ["Lentes", "Macetero", "Mochila", "Banano", "Ladrillo"]
-
-40.times do |i|
+42.times do |i|
     Product.create(
         title: Faker::Commerce.product_name,
         description: Faker::Marketing.buzzwords,
